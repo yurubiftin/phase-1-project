@@ -35,3 +35,7 @@
     background-color: #050505;
     outline:none;
  }
+ div{
+    display: flex;
+    flex-wrap: wrap;
+ }
