@@ -72,4 +72,6 @@
     font-weight: bold;
     padding: 0.25rem 0.8rem;
  }
- 
+ .movie-info span.green{
+    color:green ;
+ }
