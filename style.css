@@ -68,5 +68,8 @@
  }
  .movie-info span{
     background-color: #373b69;
-    
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0.25rem 0.8rem;
  }
+ 
