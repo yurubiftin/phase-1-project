@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap');
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: brown;
+  }
+  h1 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  form {
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+  label {
+    font-weight: bold;
+    margin-right: 8
+  }
+  input [type="text"]{
+    padding: 8px;
+    font-size:16px ;
+    border:1px solid #ccc;
+  }
+  input[type="submit"]{
+    padding:8px;
+    font-size:16px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+  }
+  #results{
+    margin-top:24px;
+  }
