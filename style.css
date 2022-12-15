@@ -53,3 +53,12 @@
  .movie img{
     width: 100%;
  }
+ .movie-info{
+    color:#eee;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+ }
