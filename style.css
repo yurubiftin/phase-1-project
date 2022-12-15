@@ -39,3 +39,14 @@
     display: flex;
     flex-wrap: wrap;
  }
+ .movie{
+    background-color: #373b69;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    overflow: hidden;
+    position:relative;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 265px;
+ }
