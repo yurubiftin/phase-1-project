@@ -50,3 +50,6 @@
     align-items: center;
     width: 265px;
  }
+ .movie img{
+    width: 100%;
+ }
