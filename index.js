@@ -1,45 +1,19 @@
-const form1 = document.getElementById('form1');
-const form2 = document.getElementById('form2');
-const form3 = document.getElementById('form3');
-const results = document.getElementById('results');
-const apiKey = 'your_api_key';
-form1.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const title = document.getElementById('title').value;
-  fetch(`http://www.omdbapi.com/?apikey=${apiKey}&t=${title}`)
-    .then((response) => response.json())
-    .then((data) => {
-      results.innerHTML = `
-      <h2>${data.Title}</h2>
-     <p>${data.Year}</p>
-      <p>${data.Director}</p> 
-      <p>${data.Actors}</p>`;
-    });
-});
-form2.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const actor = document.getElementById('actor').value;
-  fetch(`http://www.omdbapi.com/?apikey=${apiKey}&s=${actor}`)
-    .then((response) => response.json())
-    .then((data) => {
-      results.innerHTML = `<h2>${data.Search[0].Title}</h2> <p>${data.Search[0].Year}</p> <p>${data.Search[0].Director}</p> <p>${data.Search[0].Actors}</p>`;
-    });
-});
-form3.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const director = document.getElementById('director').value;
-  fetch(`http://www.omdbapi.com/?apikey=${apiKey}&s=${director}`)
-  .then((response) => response.json())
-  .then((data) => {
-    results.innerHTML = `<h2>${data.Search[0].Title}</h2> <p>${data.Search[0].Year}</p> <p>${data.Search[0].Director}</p> <p>${data.Search[0].Actors}</p>`;
-  });
-});
+const APIURL =`https://api.themoviedb.org/3/discover/movie?
+api_key=04c35731a5ee918f014970082a0088b1`;
+const IMGPATH =`https://image.tmdb.org/t/p/w1280`;
 
+const SEARCHAPI = `https://api.themoviedb.org/3/search/movie?
+api_key=04c35731a5ee918f014970082a0088b1&query=`;
 
+const main =document.getElementById("content");
+const form = document.getElementById("form");
+const search = document.getElementById("search");
 
+getmovies(APIURL);
 
-
-
-
-
-
+async function getmovies(url){
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
+    showMovies(data.results);
+}
