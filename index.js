@@ -17,3 +17,11 @@ async function getmovies(url){
     console.log(data);
     showMovies(data.results);
 }
+function showMovies(movies){
+    main.innerHTML="";
+    movies.forEach(movie=> {
+     const {poster_path,title,overview,vote_average}=movie;
+     const movieEl=document.createElement("div")
+     
+    });
+}
