@@ -8,4 +8,10 @@
     font-family: 'Gentium plus',serif;
     margin:0;
  }
- header
+ header{
+    background-color: #363636;
+    display: flex;
+ }
+ h1{
+    
+ }
