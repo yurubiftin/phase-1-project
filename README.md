@@ -8,11 +8,16 @@ choice.Once searched the movie display overview,rating ,title and also the pictu
 on the cover-page.
 
 ## setup
-navigate in the main directory`cd development`
+navigate in the main directory `cd development`
+
 then `cd code`
+
 after that `cd phase-1`
-finally`cd phase-1-project`
+
+finally `cd phase-1-project`
+
 clone the repo in the directory above`git clone git@github.com:yurubiftin/phase-1-project.git`
+
 open the vs code `code .`
 
 ## installation
@@ -21,10 +26,9 @@ visual studio code
 
 
 copyright(c) `Yurub Ahmed`
+
 ## license
 This project is lincesed under ISC license
-
-
 
 ## author
 Yurub Ahmed
