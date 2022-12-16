@@ -17,11 +17,13 @@ async function getmovies(url){
     console.log(data);
     showMovies(data.results);
 }
+
 function showMovies(movies){
     main.innerHTML="";
     movies.forEach(movie=> {
      const {poster_path,title,overview,vote_average}=movie;
      const movieEl=document.createElement("div")
+     movieEl.className='movie-info'
     movieEl.classList.add("movie");
     movieEl.innerHTML=`
         <img src="${IMGPATH}${poster_path}"alt="${title}">
@@ -37,6 +39,7 @@ function showMovies(movies){
     main.appendChild(movieEl);
     });
 }
+
 function getClassByRate(vote){
     if(vote >=8){
         return"green";
@@ -46,6 +49,16 @@ function getClassByRate(vote){
         return"red";
     }
 }
+
+function searchMovies(url) {
+    // Fetch the movie data from the API using the provided URL
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        // When the data is received, show the movies using the showMovies function
+        showMovies(data.results);
+      });
+  }
 form.addEventListener("submit", e =>{
     e.preventDefault();
     const searchTerm= search.value;
