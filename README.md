@@ -20,6 +20,11 @@ open the vs code `code .`
 visual studio code
 
 
-
+copyright(c) `Yurub Ahmed`
 ## license
 This project is lincesed under ISC license
+
+
+
+## author
+Yurub Ahmed
