@@ -86,3 +86,8 @@
 .movie:hover{
     transform: translateY(0);
 }
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
