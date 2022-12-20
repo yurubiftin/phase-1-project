@@ -24,8 +24,11 @@ open the vs code `code .`
 ### requirement
 visual studio code
 
+To use movie search app use can use this live link; https://yurubiftin.github.io/phase-1-project/
 
-copyright(c) `Yurub Ahmed`
+
+
+## copyright(c) `Yurub Ahmed`
 
 ## license
 This project is lincesed under ISC license
